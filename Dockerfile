@@ -7,4 +7,5 @@ RUN git clone https://github.com/atilika/kuromoji-server.git /usr/src/app && \
     rm -Rf .git
 
 FROM alpine:3.6
-COPY --from=git_clone /usr/src/app /usr/src/app
+COPY --from=git-clone /usr/src/app /usr/src/app
+
