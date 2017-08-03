@@ -1,4 +1,4 @@
-FROM alpine:3.6 AS git_clone 
+FROM alpine:3.6 AS git-clone 
 
 
 RUN apk update && apk upgrade && \
